@@ -289,6 +289,10 @@ class _CompactNumberFormat extends NumberFormat {
     final divisor = style.printsAsIs ? 1 : style.divisor;
     final numberToFormat = _divide(number, divisor);
     var formatted = super.format(numberToFormat);
+    print(style);
+    print(divisor);
+    print(numberToFormat);
+    print(formatted);
     var prefix = style.prefix;
     var suffix = style.suffix;
     // If this is for a currency, then the super call will have put the currency
